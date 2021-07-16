@@ -1,0 +1,14 @@
+--protected
+--no-private
+--exclude ext/oci8/apiwrap.rb
+--exclude ext/oci8/oraconf.rb
+--exclude lib/oci8/compat.rb
+--exclude lib/dbd
+--hide-void-return
+--charset UTF-8
+--asset docs/osx-install-dev-tools.png:osx-install-dev-tools.png
+-
+NEWS
+COPYING
+COPYING_old
+docs/*.md

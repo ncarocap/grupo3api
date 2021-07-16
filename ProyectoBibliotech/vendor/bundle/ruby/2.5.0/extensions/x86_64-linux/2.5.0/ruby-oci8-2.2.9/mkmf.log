@@ -1,0 +1,472 @@
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -lruby-2.5  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -lruby-2.5  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() { return 0; }
+/* end */
+
+./conftest
+"gcc -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: #ifndef __GNUC__
+5: # error
+6: |:/ === __GNUC__ undefined === /:|
+7: #endif
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -lruby-2.5  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() { return sizeof(long) == 8 ? 0 : 1; }
+/* end */
+
+./conftest
+have_header: checking for sys/types.h... -------------------- yes
+
+"gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/types.h>
+/* end */
+
+--------------------
+
+
+SQL*Plus: Release 18.0.0.0.0 - Production on Fri Apr 9 17:41:20 2021
+have_header: checking for oci.h... -------------------- yes
+
+"gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <oci.h>
+/* end */
+
+--------------------
+
+have_func: checking for OCIEnvCreate() in oci.h... -------------------- yes
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/usr/lib  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/usr/lib  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <oci.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))OCIEnvCreate; return !p; }
+/* end */
+
+--------------------
+
+checking for OCI_MAJOR_VERSION in oci.h... -------------------- 18
+
+"gcc -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public   -c conftest.c"
+conftest.c:6:5: error: size of array ‘conftest_const’ is negative
+ int conftest_const[(OCI_MAJOR_VERSION < 0) ? 1 : -1];
+     ^~~~~~~~~~~~~~
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <oci.h>
+4: 
+5: /*top*/
+6: int conftest_const[(OCI_MAJOR_VERSION < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <oci.h>
+ 4: 
+ 5: #include <stdio.h>
+ 6: /*top*/
+ 7: typedef unsigned
+ 8: #ifdef PRI_LL_PREFIX
+ 9: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+10: LONG_LONG
+11: #else
+12: #define PRI_CONFTEST_PREFIX "l"
+13: long
+14: #endif
+15: conftest_type;
+16: conftest_type conftest_const = (conftest_type)(OCI_MAJOR_VERSION);
+17: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+checking for OCI_MINOR_VERSION in oci.h... -------------------- 4
+
+"gcc -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public   -c conftest.c"
+conftest.c:6:5: error: size of array ‘conftest_const’ is negative
+ int conftest_const[(OCI_MINOR_VERSION < 0) ? 1 : -1];
+     ^~~~~~~~~~~~~~
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <oci.h>
+4: 
+5: /*top*/
+6: int conftest_const[(OCI_MINOR_VERSION < 0) ? 1 : -1];
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <oci.h>
+ 4: 
+ 5: #include <stdio.h>
+ 6: /*top*/
+ 7: typedef unsigned
+ 8: #ifdef PRI_LL_PREFIX
+ 9: #define PRI_CONFTEST_PREFIX PRI_LL_PREFIX
+10: LONG_LONG
+11: #else
+12: #define PRI_CONFTEST_PREFIX "l"
+13: long
+14: #endif
+15: conftest_type;
+16: conftest_type conftest_const = (conftest_type)(OCI_MINOR_VERSION);
+17: int main() {printf("%"PRI_CONFTEST_PREFIX"u\n", conftest_const); return 0;}
+/* end */
+
+./conftest |
+--------------------
+
+have_func: checking for localtime_r()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13:57: error: ‘localtime_r’ undeclared (first use in this function); did you mean ‘locale_t’?
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))localtime_r; return !p; }
+                                                         ^~~~~~~~~~~
+                                                         locale_t
+conftest.c:13:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))localtime_r; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void localtime_r();
+14: int t(void) { localtime_r(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dladdr()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13:57: error: ‘dladdr’ undeclared (first use in this function); did you mean ‘daddl’?
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))dladdr; return !p; }
+                                                         ^~~~~~
+                                                         daddl
+conftest.c:13:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))dladdr; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void dladdr();
+14: int t(void) { dladdr(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlmodinfo()... -------------------- no
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13:57: error: ‘dlmodinfo’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))dlmodinfo; return !p; }
+                                                         ^~~~~~~~~
+conftest.c:13:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlmodinfo; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+/usr/bin/ld: /tmp/cc7PxEPU.o: en la función `t':
+/home/nicolas/Escritorio/Portafolio/backend/ProyectoBibliotech/vendor/bundle/ruby/2.5.0/gems/ruby-oci8-2.2.9/ext/oci8/conftest.c:14: referencia a `dlmodinfo' sin definir
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void dlmodinfo();
+14: int t(void) { dlmodinfo(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dlgetname()... -------------------- no
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:13:57: error: ‘dlgetname’ undeclared (first use in this function); did you mean ‘basename’?
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))dlgetname; return !p; }
+                                                         ^~~~~~~~~
+                                                         basename
+conftest.c:13:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlgetname; return !p; }
+/* end */
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+/usr/bin/ld: /tmp/cchTKjRh.o: en la función `t':
+/home/nicolas/Escritorio/Portafolio/backend/ProyectoBibliotech/vendor/bundle/ruby/2.5.0/gems/ruby-oci8-2.2.9/ext/oci8/conftest.c:14: referencia a `dlgetname' sin definir
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void dlgetname();
+14: int t(void) { dlgetname(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for ruby/thread.h... -------------------- yes
+
+"gcc -E -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/thread.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_class_superclass() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_class_superclass; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_without_gvl() in ruby/thread.h... -------------------- yes
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby/thread.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_sym2str() in ruby.h... -------------------- yes
+
+"gcc -o conftest -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall conftest.c  -L. -L/usr/lib/x86_64-linux-gnu -L. -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic     -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lruby-2.5  -L/opt/oracle/product/18c/dbhomeXE/lib -Wl,-rpath,/opt/oracle/product/18c/dbhomeXE/lib -lclntsh -lpthread -lgmp -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int main(int argc, char **argv)
+ 8: {
+ 9:   if (argc > 1000000) {
+10:     printf("%p", &t);
+11:   }
+12: 
+13:   return 0;
+14: }
+15: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_sym2str; return !p; }
+/* end */
+
+--------------------
+
+"gcc -I/usr/include/x86_64-linux-gnu/ruby-2.5.0 -I/usr/include/ruby-2.5.0/ruby/backward -I/usr/include/ruby-2.5.0 -I. -Wdate-time -D_FORTIFY_SOURCE=2   -g -O2 -fdebug-prefix-map=/build/ruby2.5-ADJMZV/ruby2.5-2.5.5=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/opt/oracle/product/18c/dbhomeXE/rdbms/public -Wall   -c conftest.c"
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_SYS_TYPES_H 1
+ 4: #define HAVE_OCI_H 1
+ 5: #define HAVE_OCIENVCREATE 1
+ 6: #define ORACLE_CLIENT_VERSION 0x12040000
+ 7: #define HAVE_LOCALTIME_R 1
+ 8: #define HAVE_DLADDR 1
+ 9: #define HAVE_RUBY_THREAD_H 1
+10: #define HAVE_RB_CLASS_SUPERCLASS 1
+11: #define HAVE_RB_THREAD_CALL_WITHOUT_GVL 1
+12: #define HAVE_RB_SYM2STR 1
+13: #define HAVE_PLTHOOK 1
+14: #define Init_oci8lib Init_oci8lib_250
+15: #define oci8lib oci8lib_250
+16: #define OCI8LIB_VERSION "2.2.9"
+17: #endif
+/* end */
+
